@@ -97,11 +97,42 @@ defwinprop{
 defwinprop {class="uim-toolbar-qt4", statusbar="uim"}
 -- defwinprop {class="trayer", statusbar="trayer"}
 -- defwinprop {class="panel", statusbar="panel"}
+defwinprop {
+   class = "jetbrains-idea",
+   instance = "sun-awt-X11-XWindowPeer",
+   transient_mode = "current",
+}
+
+defwinprop {
+    class = "Player",
+    instance = "player",
+    transient_mode = "normal",
+}
+
+defwinprop {
+    class = "Player",
+    instance = "player",
+    name = "^Genymotion$",
+    transient_mode = "current",
+}
 
 defwinprop {
    class = "jetbrains-idea-ce",
    instance = "sun-awt-X11-XWindowPeer",
    transient_mode = "current",
+}
+
+defwinprop {
+    class = "GNUstep",
+    intance = "ProjectCenter",
+    transient_mode = "current",
+}
+
+defwinprop {
+    class = "GNUstep",
+    instance = "ProjectCenter",
+    name =  ".*%[English%]",
+    transient_mode = "normal",
 }
 
 ioncore.get_hook('clientwin_do_manage_alt'):add(
@@ -119,3 +150,5 @@ ioncore.defshortening("[^:]+: (.*)(<[0-9]+>)", "$1$2$|$1$<...$2")
 ioncore.defshortening("[^:]+: (.*)", "$1$|$1$<...")
 ioncore.defshortening("(.*)(<[0-9]+>)", "$1$2$|$1$<...$2")
 ioncore.defshortening("(.*)", "$1$|$1$<...")
+
+
