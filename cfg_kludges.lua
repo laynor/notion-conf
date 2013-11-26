@@ -104,6 +104,12 @@ defwinprop {
 }
 
 defwinprop {
+   class = "jetbrains-android-studio",
+   instance = "sun-awt-X11-XWindowPeer",
+   transient_mode = "current",
+}
+
+defwinprop {
     class = "Player",
     instance = "player",
     transient_mode = "normal",

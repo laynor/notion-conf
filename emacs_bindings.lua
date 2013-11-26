@@ -146,12 +146,12 @@ Emacs.WMPlex = {
       kpress("k", "WRegion.rqclose_propagate(_, _sub)"),
      }),
 
-    submap(META.."u", {
-        submap(META.."x", {
-            bdoc("Kill client owning current client window."),
-            kpress("k", "WClientWin.kill(_sub)", "_sub:WClientWin"),
-	 })
-     }),
+    -- submap(META.."u", {
+    --     submap(META.."x", {
+    --         bdoc("Kill client owning current client window."),
+    --         kpress("k", "WClientWin.kill(_sub)", "_sub:WClientWin"),
+    --      })
+    --  }),
 
     bdoc("Send next key press to current client window. "..
 	 "Some programs may not allow this by default."),
@@ -298,5 +298,5 @@ defbindings("WEdln", Emacs.WEdln)
 
 --   Adam Di Carlo <aph@debian.org> (all public domain, April 27 2007)
 -- * For compatability with ion3 20070318, change WIonWS to WTiling.
--- * Disable non-working and overly obtrusive META-TAB and META-Shift-TAB 
+-- * Disable non-working and overly obtrusive META-TAB and META-Shift-TAB
 --   remapping.
